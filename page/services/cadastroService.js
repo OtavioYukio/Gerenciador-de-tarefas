@@ -7,25 +7,30 @@ form?.addEventListener('submit', async (e) => {
         const email = document.querySelector("#email")
         const senha = document.querySelector("#password")
         const confirmSenha = document.querySelector("#confirm-password")
+        const error = document.querySelector("#error")
 
-        if (!nome) {
-            alert("insira um nome")
+        if (!nome.value) {
+            error.innerHTML = "insira um nome"
             return
         }
-        if (!email) {
-            alert("insira um email")
+        if (!email.value) {
+            error.innerHTML = "insira um email"
             return
         }
-        if (!senha) {
-            alert("insira uma senha")
+        if (!senha.value) {
+            error.innerHTML = "insira uma senha"
             return
         }
-        if (!confirmSenha) {
-            alert("confirme sua senha")
+        if (!confirmSenha.value) {
+            error.innerHTML = "confirme sua senha"
             return
         }
         if (senha.value != confirmSenha.value) {
-            alert("As senhas nao se coincidem")
+            error.innerHTML = "As senhas nao se coincidem"
+            return
+        }
+        if (senha.value.length < 8) {
+            error.innerHTML = "A senha deve conter no minimo 8 caracteres"
             return
         }
         const data = {

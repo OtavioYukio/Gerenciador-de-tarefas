@@ -39,6 +39,7 @@ body {
 
 .input-group {
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 .input-group label {
@@ -91,6 +92,10 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+}
+
+#error {
+    color: rgb(255, 73, 73);
 }
 
 @media (max-width: 600px) {

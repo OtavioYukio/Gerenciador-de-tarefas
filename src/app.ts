@@ -44,6 +44,7 @@ app.use((req:Request, res:Response, next:NextFunction) => {
 
 
 app.post("/cadastro", userController.createUser)
+app.post("/login", userController.getUser)
 
 app.listen(3000, () => {
     console.log("Servidor rodando na porta 3000...");

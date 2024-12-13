@@ -81,6 +81,13 @@
     text-decoration: underline;
   }
 
+  #error {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgb(255, 73, 73);
+  }
+
   @media (max-width: 500px) {
     .container {
       padding: 30px;

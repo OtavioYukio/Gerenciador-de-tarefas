@@ -12,6 +12,7 @@
             <h2>Login</h2>
             <form id="inp">
                 <div class="input-group">
+                    <p id="error"></p>
                     <label for="username">Usuário</label>
                     <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
                 </div>
@@ -19,6 +20,10 @@
                     <label for="password">Senha</label>
                     <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
                 </div>
+                
+                <input type="checkbox" id="verifySave">
+                <span>Salvar Credenciais</span>
+            
                 <button type="submit">Entrar</button>
                 <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
             </form>
